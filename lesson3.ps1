@@ -27,3 +27,6 @@ Get-AzLocation | format-table
 
 #create vm
 new-azvm -Name winarunvm -Credential (get-credential) -verbose -whatif
+
+#create ubuntu vm
+new-azvm -name ubarunvm -Credential (get-credential) -Image "UbuntuLTS" -Verbose -WhatIf
